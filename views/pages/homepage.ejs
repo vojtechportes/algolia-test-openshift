@@ -1,2 +1,12 @@
+<% if (search.page > 0) { %>
+	<div class="message message--warning">
+		<div class="message__inner">
+			<p>This is TO DO reverse pager. I know I should have done it, but I realized too late. But let's see, maybe I will fix it.</p>
+			<p>For now, you can toogle states of this message using this button.</p>
+			<a href="#" class="button button--secondary toggle-message"><span>Toggle button</span></a>
+			<%- include('../modules/pager', {'search': search}) %>
+		</div>
+	</div>
+<% } %>
 <%- include('../modules/listing', {'search': search}) %>
-<%- include('../modules/pager') %>
+<%- include('../modules/pager', {'search': search}) %>

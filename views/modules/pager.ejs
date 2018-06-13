@@ -1,5 +1,9 @@
 <div class="pager">
 	<a href="#">
+		<% if (search.page > 0) { %>
+		Load previous (<span class="pager__count"></span>/<span class="pager__count-outof"></span>)
+		<% } else { %>
 		Load more (<span class="pager__count"></span>/<span class="pager__count-outof"></span>)
+		<% } %>
 	</a>
 </div>
