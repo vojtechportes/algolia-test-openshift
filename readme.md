@@ -11,18 +11,38 @@ Repository with static assets can be found here https://github.com/vojtechportes
 ### getAll
 
 ```
+/* Using Docker */
+
 curl -X GET localhost:5500/api/v1/public/search/getAllData/:page
+
+/* Using local installation */
+
+curl -X GET localhost:5000/api/v1/public/search/getAllData/:page
+
+/* Using Openshift */
+
+http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com/api/v1/public/search/getAllData/:page
 ```
 
 ### getFiltered
 
 ```
-curl -X GET localhost:5500/api/v1/public/search/getFilteredData/:page?query=query
+/* Using Docker */
+
+curl -X GET localhost:5500/api/v1/public/search/getAllData/:page?query=query
+
+/* Using local installation */
+
+curl -X GET localhost:5000/api/v1/public/search/getAllData/:page?query=query
+
+/* Using Openshift */
+
+http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com/api/v1/public/search/getAllData/:page?query=query
 ```
 
 ## Configuration
 
-Besides algolia settingings (appID, publicApiKey, privateApiKey, indexName), you can se also port on which this application will run and CORS to improve security of API and APP itself.
+Besides algolia settingings (appID, publicApiKey, privateApiKey, indexName), you can se also set port on which this application will run and CORS to improve security of API and APP itself.
 
 ```javsacript
 {
@@ -87,5 +107,5 @@ node index.js
 ## Prview on Openshift
 
 ```
-http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com/
+http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com
 ```
