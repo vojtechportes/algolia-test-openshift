@@ -1,0 +1,22 @@
+{
+    "name": "algolia-test",
+    "author": "Vojtech Vaclav Portes",
+    "description": "Algolia Test app",
+    "license": "MIT",
+    "version": "1.0.0",
+    "repository": "https://github.com/vojtechportes/algolia-test.git",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "algoliasearch": "^3.27.1",
+        "algoliasearch-helper": "^2.26.0",
+        "express": "^4.16.3",
+        "ejs": "^2.6.1",
+        "body-parser": "^1.18.3",
+        "node-validator": "^0.1.27",
+        "helmet": "^3.12.1",
+        "cors": "^2.8.4"
+    }
+}

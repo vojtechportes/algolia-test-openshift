@@ -1,0 +1,13 @@
+<div class="listing" data-search-settings='{"type": "<%= search.type %>", "page": <%= search.page %>, "query": "<%= search.query %>", "target": ".listing .listing__items", "fields": <%- include('fields_listing_item.ejs') %>, "equalizeHeights": ".listing__item__inner"}'>
+	<div class="listing__items row">
+
+	</div>
+	<div class="listing__items-next row">
+		<div class="listing__items-next__item" data-page="<%= parseInt(search.page) + 1 %>">
+
+		</div>
+	</div>
+	<div class="template template__item">
+		<%= include('item_listing_item.ejs', {'elClass': 'col--3', 'showPrices': true, 'highlight': false}) %>
+	</div>
+</div>

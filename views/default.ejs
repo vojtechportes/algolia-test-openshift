@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Algolia Test</title>
+		<meta encoding="utf8">
+		<link rel="stylesheet" href="/c/main.min.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	</head>
+	<body class="x-<%= page %>">
+		<div id="content-holder">
+			<header>
+				<div class="container">
+					<%- include('modules/logo'); %>
+				</div>
+			</header>
+			<main>
+				<div class="container">
+					<%- include('modules/nav'); %>
+					<%- include('modules/searchbar') %>
+					<div class="clearfix"></div>
+					<%- include(`pages/${page}`); %>
+				</div>
+			</main>
+			<%- include('modules/footer'); %>
+		</div>
+		<div class="backdrop hide"></div>
+		<script src="/j/jquery.min.js"></script>
+		<script src="/j/main.es5.min.js"></script>
+	</body>
+</html>

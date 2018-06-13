@@ -1,0 +1,15 @@
+<div class="searchbar">
+	<form method="GET">
+		<input type="text" name="query" id="searchbar__input" placeholder="Type to search" value="<%= search.query %>" autocomplete="off">
+		<button><img src="/i/search.svg" width="26" height="26"></button>
+		<span></span>
+	</form>
+	<div class="searchbar__results donotload" data-search-settings='{"type": "search_get-filtered", "page": 0, "query": "<%= search.query %>", "target": ".searchbar__results__items", "fields": <%- include('fields_listing_item.ejs') %>, "inputMethod": "type", "inputTarget": "#searchbar__input"}'>
+		<div class="searchbar__results__items">
+
+		</div>
+		<div class="template template__item">
+			<%= include('item_listing_item.ejs', {'elClass': '', 'showPrices': false, 'highlight': true}) %>
+		</div>
+	</div>
+</div>
