@@ -42,6 +42,30 @@ Besides algolia settingings (appID, publicApiKey, privateApiKey, indexName), you
 }
 ```
 
+## Navigation
+
+To search data, you can use search input and use arrow keys to navigate.
+
+To go to speciffic page or search query you can use following:
+
+
+```
+Using local installation:
+
+localhost:5000?page=1
+localhost:5000?page=1&query=News
+
+Using docker installation:
+
+localhost:5500?page=1
+localhost:5ř00?page=1&query=News
+
+Using openshift:
+
+http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com?page=1
+http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com?page=1&query=news
+```
+
 ## Install using DOCKER
 
 ```
