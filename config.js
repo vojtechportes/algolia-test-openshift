@@ -10,7 +10,7 @@ const config = {
 		'indexName': 'algolia_test'
 	},
 	'server': {
-		'port': 5000,
+		'port': 8080,
 		'cors': {
 			'enabled': true,
 			'whitelist': []
