@@ -58,7 +58,7 @@ localhost:5000?page=1&query=News
 Using docker installation:
 
 localhost:5500?page=1
-localhost:5ř00?page=1&query=News
+localhost:5500?page=1&query=News
 
 Using openshift:
 
