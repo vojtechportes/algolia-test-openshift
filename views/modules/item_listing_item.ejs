@@ -4,24 +4,26 @@
 			<div class="listing__item__image">
 				<img src="{{image||i/no-image.png}}" onerror="this.src='i/no-image.png'">
 			</div>
-			<% if (highlight) { %>
-				<div class="listing__item__category"><span>{{_highlightResult.category.value}}</span></div>
-				<div class="listing__item__name"><span>{{_highlightResult.name.value}}</span></div>
-			<% } else { %>
-				<div class="listing__item__category"><span>{{category}}</span></div>
-				<div class="listing__item__name"><span>{{name}}</span></div>			
-			<% } %>
+			<div>
+				<% if (highlight) { %>
+					<div class="listing__item__category"><span>{{_highlightResult.category.value}}</span></div>
+					<div class="listing__item__name"><span>{{_highlightResult.name.value}}</span></div>
+				<% } else { %>
+					<div class="listing__item__category"><span>{{category}}</span></div>
+					<div class="listing__item__name"><span>{{name}}</span></div>			
+				<% } %>
+			</div>
 			<div class="clearfix hide--desktop hide--tablet"></div>
-			<div class="listing__item__bottom">
-				<% if (showPrices) { %>
+			<% if (showPrices) { %>
+				<div class="listing__item__bottom">
 					<div class="listing__item__bottom__price">
 						<span>$3.99</span>
 					</div>
-				<% } %>
-				<span href="#" class=" button button--outlined">
-					<span>Buy now</span>
-				</span>
-			</div>
+					<span href="#" class=" button button--outlined">
+						<span>Buy now</span>
+					</span>
+				</div>
+			<% } %>
 		</div>
 	</a>
 </div>
