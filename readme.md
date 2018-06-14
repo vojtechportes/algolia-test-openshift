@@ -21,7 +21,7 @@ curl -X GET localhost:5000/api/v1/public/search/getAllData/:page
 
 /* Using Openshift */
 
-http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com/api/v1/public/search/getAllData/:page
+curl -X GET http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com/api/v1/public/search/getAllData/:page
 ```
 
 ### getFiltered
@@ -37,7 +37,7 @@ curl -X GET localhost:5000/api/v1/public/search/getAllData/:page?query=query
 
 /* Using Openshift */
 
-http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com/api/v1/public/search/getAllData/:page?query=query
+curl -X GET http://algolia-test-openshift-algolia-test-openshift.1d35.starter-us-east-1.openshiftapps.com/api/v1/public/search/getAllData/:page?query=query
 ```
 
 ## Configuration
